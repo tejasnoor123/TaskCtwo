@@ -19,7 +19,7 @@ const {
 const app = express();
 const router = express.Router();
 
-const JWT_SECRET = process.env.JWT_SECRET || "dev_deakin_super_secret_jwt_key_2026";
+const JWT_SECRET = process.env.JWT_SECRET || "dev_fallback_secret_local_only";
 
 // Firebase initialization for serverless function
 const firebaseConfig = {

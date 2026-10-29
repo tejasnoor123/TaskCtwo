@@ -21,7 +21,7 @@ dotenv.config({ path: path.join(__dirname, ".env") });
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const JWT_SECRET = process.env.JWT_SECRET || "dev_deakin_super_secret_jwt_key_2026";
+const JWT_SECRET = process.env.JWT_SECRET || "dev_fallback_secret_local_only";
 
 // Firebase initialization for backend
 const firebaseConfig = {
