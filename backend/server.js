@@ -394,6 +394,9 @@ app.post(["/subscribe", "/api/subscribe"], async (req, res) => {
         });
     }
 });
+app.get("/", (req, res) => {
+  res.status(200).send("Backend is running successfully!");
+});
 
 // Start Express server
 app.listen(PORT, () => {
