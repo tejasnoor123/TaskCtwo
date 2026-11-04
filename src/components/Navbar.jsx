@@ -26,6 +26,9 @@ function Navbar() {
 
             <div className="nav-links">
                 <Link to="/post" className="nav-item">Post</Link>
+                <Link to="/browse-posts" className="nav-item">
+                    Browse Posts
+                </Link>
                 <Link to="/pricing" className="nav-item">Pricing</Link>
 
                 {isAuthenticated ? (
